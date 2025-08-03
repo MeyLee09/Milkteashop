@@ -95,5 +95,75 @@ ThanhMyMilkTea/
 - **Email:** myltt260902@sv-onuni.edu.vn
 - **Điện thoại:** 0373452348
 
+  ---
+
+
+## 📊 Báo cáo tiến độ dự án ThanhMyMilkTea (01/07/2025 - 03/08/2025)
+
+### Tuần 1 (01/07/2025 - 07/07/2025)
+- **Mục tiêu:**  
+  - Thu thập và phân tích yêu cầu hệ thống bán trà sữa.  
+  - Thiết kế sơ bộ mô hình dữ liệu (ERD).  
+- **Kết quả:**  
+  - Hoàn thành bảng yêu cầu chức năng chi tiết.  
+  - Thiết kế ERD với các bảng: Sản phẩm, Loại sản phẩm, Khách hàng, Đơn hàng.  
+- **Kế hoạch tuần tiếp theo:**  
+  - Cài đặt môi trường phát triển ASP.NET MVC.  
+  - Tạo project và cấu trúc thư mục.
+
+---
+
+### Tuần 2 (08/07/2025 - 14/07/2025)
+- **Mục tiêu:**  
+  - Xây dựng Models cho các thực thể chính.  
+  - Thiết lập kết nối database (SQL Server).  
+- **Kết quả:**  
+  - Hoàn thành Models Sản phẩm, Loại sản phẩm, Khách hàng, Đơn hàng.  
+  - Kết nối và test truy vấn cơ bản với database.  
+- **Kế hoạch tuần tiếp theo:**  
+  - Xây dựng Controllers CRUD cho sản phẩm và loại sản phẩm.
+
+---
+
+### Tuần 3 (15/07/2025 - 21/07/2025)
+- **Mục tiêu:**  
+  - Xây dựng Controllers xử lý CRUD cho Sản phẩm, Loại sản phẩm.  
+  - Bắt đầu tạo Views hiển thị danh sách sản phẩm.  
+- **Kết quả:**  
+  - CRUD cơ bản hoạt động ổn định.  
+  - Views cơ bản cho sản phẩm hoàn thành.  
+- **Kế hoạch tuần tiếp theo:**  
+  - Tiếp tục xây dựng giao diện người dùng (Views).  
+  - Thiết lập chức năng đăng nhập, đăng ký khách hàng.
+
+---
+
+### Tuần 4 (22/07/2025 - 28/07/2025)
+- **Mục tiêu:**  
+  - Hoàn thiện Views, tích hợp Bootstrap cho UI đẹp, responsive.  
+  - Xây dựng chức năng đăng nhập và đăng ký khách hàng.  
+- **Kết quả:**  
+  - Giao diện người dùng hoàn thiện, thân thiện.  
+  - Chức năng đăng nhập, đăng ký hoạt động đúng.  
+- **Kế hoạch tuần tiếp theo:**  
+  - Phát triển tính năng giỏ hàng và thanh toán.
+
+---
+
+### Tuần 5 (29/07/2025 - 03/08/2025)
+- **Mục tiêu:**  
+  - Xây dựng giỏ hàng, xử lý thêm, sửa, xóa sản phẩm trong giỏ.  
+  - Thiết kế trang thanh toán cơ bản.  
+- **Kết quả:**  
+  - Giỏ hàng hoạt động mượt mà.  
+  - Trang thanh toán cơ bản hoàn thành.  
+- **Kế hoạch tiếp theo:**  
+  - Tối ưu giao diện, kiểm thử và chuẩn bị demo dự án.
+
+---
+
+*Dự án tiến triển đúng tiến độ, đảm bảo đầy đủ chức năng quản lý bán trà sữa bằng ASP.NET MVC theo kế hoạch đề ra.*
+
+
 ## 🗓️ Ngày tạo
 Tháng 8, 2025
