@@ -1,0 +1,92 @@
+﻿@model NhanVien
+@{
+    ViewData["Title"] = "Sửa nhân viên";
+    Layout = "_AdminLayout";
+}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Sửa nhân viên</h1>
+    <a class="btn btn-outline-secondary" asp-action="NhanVien">
+        <i class="fas fa-arrow-left"></i> Quay lại
+    </a>
+</div>
+<div class="card">
+    <div class="card-body">
+        <form method="post">
+            <input type="hidden" name="MaNv" value="@Model.MaNv">
+            <input type="hidden" name="TrangThai" value="@Model.TrangThai">
+            <div class="mb-3">
+                <label class="form-label">Mã nhân viên</label>
+                <input type="text" class="form-control" value="@Model.MaNv" readonly>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Tên nhân viên *</label>
+                        <input type="text" class="form-control" name="TenNv" value="@Model.TenNv" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Chức vụ</label>
+                        <select class="form-select" name="ChucVu">
+                            <option value="">-- Chọn chức vụ --</option>
+                            <option value="Thu ngân" selected="@(Model.ChucVu == "Thu ngân")">Thu ngân</option>
+                            <option value="Pha chế" selected="@(Model.ChucVu == "Pha chế")">Pha chế</option>
+                            <option value="Quản lý ca" selected="@(Model.ChucVu == "Quản lý ca")">Quản lý ca</option>
+                            <option value="Giao hàng" selected="@(Model.ChucVu == "Giao hàng")">Giao hàng</option>
+                            <option value="Tạp vụ" selected="@(Model.ChucVu == "Tạp vụ")">Tạp vụ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" name="Email" value="@Model.Email">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Số điện thoại</label>
+                        <input type="text" class="form-control" name="Sdt" value="@Model.Sdt">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Địa chỉ</label>
+                <input type="text" class="form-control" name="DiaChi" value="@Model.DiaChi">
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Lương</label>
+                        <input type="number" class="form-control" name="Luong" value="@Model.Luong">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Ngày vào làm</label>
+                        <input type="date" class="form-control" name="NgayVaoLam" value="@Model.NgayVaoLam?.ToString("yyyy-MM-dd")">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Quản lý</label>
+                <select class="form-select" name="MaQl">
+                    <option value="">-- Chọn quản lý --</option>
+                    @foreach (var ql in (List<QuanLy>)ViewBag.QuanLys)
+                    {
+                            <option value="@ql.MaQl" selected="@(Model.MaQl == ql.MaQl)">@ql.TenQl</option>
+                    }
+                </select>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Cập nhật
+
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

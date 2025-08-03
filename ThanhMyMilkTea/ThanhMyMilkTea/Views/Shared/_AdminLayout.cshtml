@@ -1,0 +1,581 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - @(Context.Session.GetString("LoaiTaiKhoan") == "ADMIN" ? "Admin" : "Nhân viên") Thanh My</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --admin-primary: #2c3e50;
+            --admin-secondary: #34495e;
+            --admin-accent: #3498db;
+            --admin-success: #27ae60;
+            --admin-warning: #f39c12;
+            --admin-danger: #e74c3c;
+            --admin-light: #ecf0f1;
+            --admin-dark: #2c3e50;
+            --sidebar-width: 260px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: var(--admin-dark);
+        }
+
+        /* Top Navbar */
+        .admin-navbar {
+            background: linear-gradient(135deg, var(--admin-primary) 0%, var(--admin-secondary) 100%);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: 60px;
+        }
+
+        .navbar-brand {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: white !important;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            color: #3498db !important;
+            transform: scale(1.05);
+        }
+
+        .navbar-brand i {
+            color: #f39c12;
+            margin-right: 0.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem !important;
+            border-radius: 8px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            margin-top: 0.5rem;
+        }
+
+        .dropdown-item {
+            padding: 0.7rem 1.2rem;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin: 0.2rem;
+        }
+
+        .dropdown-item:hover {
+            background: var(--admin-light);
+            color: var(--admin-primary);
+            transform: translateX(5px);
+        }
+
+        /* Sidebar - Only for ADMIN */
+        .admin-sidebar {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: var(--sidebar-width);
+            height: calc(100vh - 60px);
+            background: white;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            z-index: 999;
+            transition: all 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .sidebar-header {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--admin-light) 0%, white 100%);
+            border-bottom: 2px solid #f8f9fa;
+        }
+
+        .sidebar-header h5 {
+            margin: 0;
+            color: var(--admin-primary);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .sidebar-nav {
+            padding: 1rem 0;
+        }
+
+        .nav-item {
+            margin: 0.2rem 1rem;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.8rem 1rem;
+            color: var(--admin-secondary) !important;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(52, 152, 219, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .nav-link:hover::before {
+            left: 100%;
+        }
+
+        .nav-link:hover {
+            background: linear-gradient(135deg, var(--admin-accent), #5dade2);
+            color: white !important;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .nav-link.active {
+            background: linear-gradient(135deg, var(--admin-accent), #5dade2);
+            color: white !important;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .nav-link i {
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Main Content - Conditional margin based on role */
+        .main-content {
+            margin-top: 60px;
+            padding: 2rem;
+            min-height: calc(100vh - 60px);
+            transition: all 0.3s ease;
+        }
+
+        /* Admin layout - with sidebar */
+        .main-content.with-sidebar {
+            margin-left: var(--sidebar-width);
+        }
+
+        /* Employee layout - without sidebar */
+        .main-content.without-sidebar {
+            margin-left: 0;
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--admin-accent), var(--admin-success), var(--admin-warning));
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, var(--admin-light) 0%, white 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .page-header h1 {
+            margin: 0;
+            color: var(--admin-primary);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .page-header .breadcrumb {
+            background: none;
+            padding: 0;
+            margin: 0.5rem 0 0 0;
+        }
+
+        .breadcrumb-item a {
+            color: var(--admin-accent);
+            text-decoration: none;
+        }
+
+        /* Sidebar Toggle */
+        .sidebar-toggle {
+            display: none;
+            background: var(--admin-accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-toggle:hover {
+            background: #2980b9;
+            transform: scale(1.1);
+        }
+
+        /* Employee Warning */
+        .employee-notice {
+            background: linear-gradient(135deg, var(--admin-warning), #f4d03f);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Responsive */
+        @@media (max-width: 768px) {
+            .admin-sidebar {
+                transform: translateX(-100%);
+            }
+
+            .admin-sidebar.show {
+                transform: translateX(0);
+            }
+
+            .main-content.with-sidebar {
+                margin-left: 0;
+            }
+
+            .main-content {
+                padding: 1rem;
+            }
+
+            .sidebar-toggle {
+                display: block;
+            }
+
+            .content-wrapper {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Custom Scrollbar */
+        .admin-sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .admin-sidebar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .admin-sidebar::-webkit-scrollbar-thumb {
+            background: var(--admin-accent);
+            border-radius: 10px;
+        }
+
+        .admin-sidebar::-webkit-scrollbar-thumb:hover {
+            background: #2980b9;
+        }
+
+        /* Status Indicators */
+        .status-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--admin-success);
+            animation: pulse 2s infinite;
+        }
+
+        @@keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Hide sidebar for non-admin users */
+        .hide-sidebar {
+            display: none !important;
+        }
+
+        /* Animation */
+        @@keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content-wrapper {
+            animation: slideIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    @{
+        var userRole = Context.Session.GetString("LoaiTaiKhoan");
+        var isAdmin = userRole == "ADMIN";
+        var username = Context.Session.GetString("Username");
+    }
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg admin-navbar">
+        <div class="container-fluid">
+            @if (isAdmin)
+            {
+                <button class="sidebar-toggle" type="button" onclick="toggleSidebar()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            }
+            
+            <a class="navbar-brand @(isAdmin ? "ms-2" : "")" href="#">
+                <i class="fas fa-coffee"></i> 
+                @if (isAdmin)
+                {
+                    <span>Admin Thanh My</span>
+                }
+                else
+                {
+                    <span>Nhân viên Thanh My</span>
+                }
+            </a>
+            
+            <div class="navbar-nav ms-auto">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-user-circle me-1"></i> @username
+                        @if (isAdmin)
+                        {
+                            <span class="badge bg-danger ms-1">ADMIN</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-info ms-1">NHÂN VIÊN</span>
+                        }
+                        <div class="status-indicator"></div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item" asp-controller="Home" asp-action="Index">
+                                <i class="fas fa-home me-2"></i>Về trang chủ
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" asp-controller="Account" asp-action="Logout">
+                                <i class="fas fa-sign-out-alt me-2"></i>Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar - Only show for ADMIN -->
+    @if (isAdmin)
+    {
+        <nav class="admin-sidebar" id="adminSidebar">
+            <div class="sidebar-header">
+                <h5>
+                    <i class="fas fa-cogs"></i>
+                    Bảng điều khiển
+                </h5>
+            </div>
+            
+            <ul class="nav flex-column sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="Index">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="SanPham">
+                        <i class="fas fa-coffee"></i>
+                        <span>Quản lý sản phẩm</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="DanhMuc">
+                        <i class="fas fa-list"></i>
+                        <span>Quản lý danh mục</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="NhaCungCap">
+                        <i class="fas fa-truck"></i>
+                        <span>Nhà cung cấp</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="DonHang">
+                        <i class="fas fa-receipt"></i>
+                        <span>Quản lý đơn hàng</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="KhachHang">
+                        <i class="fas fa-users"></i>
+                        <span>Quản lý khách hàng</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="NhanVien">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Quản lý nhân viên</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    }
+
+    <!-- Main Content -->
+    <main class="main-content @(isAdmin ? "with-sidebar" : "without-sidebar")">
+        <div class="content-wrapper">
+            @if (!isAdmin)
+            {
+                <div class="employee-notice">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Bạn đang đăng nhập với quyền Nhân viên. Một số chức năng có thể bị hạn chế.</span>
+                </div>
+            }
+            
+            @RenderBody()
+        </div>
+    </main>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    
+    <script>
+        // Sidebar toggle for mobile (only if admin)
+        function toggleSidebar() {
+            @if (isAdmin)
+            {
+                <text>
+                const sidebar = document.getElementById('adminSidebar');
+                if (sidebar) {
+                    sidebar.classList.toggle('show');
+                }
+                </text>
+            }
+        }
+
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener('click', function(event) {
+            @if (isAdmin)
+            {
+                <text>
+                const sidebar = document.getElementById('adminSidebar');
+                const toggle = document.querySelector('.sidebar-toggle');
+                
+                if (window.innerWidth = 768 && sidebar && toggle &&
+                    !sidebar.contains(event.target) && 
+                    !toggle.contains(event.target)) {
+                    sidebar.classList.remove('show');
+                }
+                </text>
+            }
+        });
+
+        // Set active nav link
+        document.addEventListener('DOMContentLoaded', function() {
+            @if (isAdmin)
+            {
+                <text>
+                const currentUrl = window.location.pathname;
+                const navLinks = document.querySelectorAll('.sidebar-nav .nav-link');
+                
+                navLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === currentUrl || currentUrl.startsWith(href)) {
+                        link.classList.add('active');
+                    }
+                });
+
+                // Add hover effects
+                navLinks.forEach(link => {
+                    link.addEventListener('mouseenter', function() {
+                        this.style.transform = 'translateX(5px)';
+                    });
+                    
+                    link.addEventListener('mouseleave', function() {
+                        if (!this.classList.contains('active')) {
+                            this.style.transform = 'translateX(0)';
+                        }
+                    });
+                });
+                </text>
+            }
+        });
+
+        // Responsive sidebar handling
+        window.addEventListener('resize', function() {
+            @if (isAdmin)
+            {
+                <text>
+                const sidebar = document.getElementById('adminSidebar');
+                if (window.innerWidth > 768 && sidebar) {
+                    sidebar.classList.remove('show');
+                }
+                </text>
+            }
+        });
+
+        // Role-based functionality
+        const userRole = '@userRole';
+        console.log('Current user role:', userRole);
+        
+        // You can add more role-based JavaScript functionality here
+        if (userRole !== 'ADMIN') {
+            console.log('Limited functionality for non-admin user');
+        }
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

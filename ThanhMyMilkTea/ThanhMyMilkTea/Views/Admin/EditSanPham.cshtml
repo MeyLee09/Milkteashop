@@ -1,0 +1,162 @@
+﻿@model SanPham
+@{
+    ViewData["Title"] = "Sửa sản phẩm";
+    Layout = "_AdminLayout";
+}
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Sửa sản phẩm</h1>
+    <a class="btn btn-outline-secondary" asp-action="SanPham">
+        <i class="fas fa-arrow-left"></i> Quay lại
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <input type="hidden" name="MaSp" value="@Model.MaSp">
+            <input type="hidden" name="TrangThai" value="@Model.TrangThai">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Mã sản phẩm</label>
+                        <input type="text" class="form-control" name="TenSp" value="@Model.TenSp" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Danh mục *</label>
+                        <select class="form-select" name="MaDanhMuc" required>
+                            <option value="">-- Chọn danh mục --</option>
+                            @foreach (var dm in (List<DanhMucSp>)ViewBag.DanhMucs)
+                            {
+                                <option value="@dm.MaDanhMuc" selected="@(Model.MaDanhMuc == dm.MaDanhMuc)">
+                                    @dm.TenDanhMuc
+                                </option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Nhà cung cấp *</label>
+                        <select class="form-select" name="MaNcc" required>
+                            <option value="">-- Chọn nhà cung cấp --</option>
+                            @foreach (var ncc in (List<NhaCungCap>)ViewBag.NhaCungCaps)
+                            {
+                                <option value="@ncc.MaNcc" selected="@(Model.MaNcc == ncc.MaNcc)">
+                                    @ncc.TenNcc
+                                </option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Xuất xứ</label>
+                        <input type="text" class="form-control" name="XuatXu" value="@Model.XuatXu">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Hình ảnh</label>
+                        <input type="file" class="form-control" name="hinhAnh" accept="image/*" onchange="previewImage(event)">
+                        <div class="form-text">
+                            <i class="fas fa-info-circle"></i>
+                            Để trống nếu không muốn thay đổi hình ảnh hiện tại.
+                        </div>
+
+                        <!-- Hiển thị hình hiện tại -->
+                        @if (!string.IsNullOrEmpty(Model.HinhAnh))
+                        {
+                            <div class="mt-2">
+                                <small class="text-muted d-block">Hình hiện tại:</small>
+                                <img id="currentImage" src="~/images/products/@Model.HinhAnh" alt="@Model.TenSp"
+                                     style="max-width: 150px; max-height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid #dee2e6;"
+                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
+                                <span style="display: none;" class="text-muted">
+                                    <i class="fas fa-image"></i> Không thể tải hình
+                                </span>
+                            </div>
+                        }
+
+                        <!-- Preview hình mới -->
+                        <div id="imagePreview" class="mt-2" style="display: none;">
+                            <small class="text-muted d-block">Hình mới:</small>
+                            <img id="preview" src="#" alt="Preview"
+                                 style="max-width: 150px; max-height: 150px; object-fit: cover; border-radius: 8px; border: 2px solid #28a745;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label class="form-label">Giá *</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" name="Gia" value="@Model.Gia" required min="0">
+                            <span class="input-group-text">VNĐ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label class="form-label">Số lượng tồn</label>
+                        <input type="number" class="form-control" name="SoLuongTon" value="@Model.SoLuongTon" min="0">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label class="form-label">Đơn vị tính</label>
+                        <input type="text" class="form-control" name="DonViTinh" value="@Model.DonViTinh">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Mô tả</label>
+                <textarea class="form-control" name="MoTa" rows="4">@Model.MoTa</textarea>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Cập nhật sản phẩm
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function previewImage(event) {
+        const file = event.target.files[0];
+        const preview = document.getElementById('preview');
+        const previewContainer = document.getElementById('imagePreview');
+        const currentImage = document.getElementById('currentImage');
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                preview.src = e.target.result;
+                previewContainer.style.display = 'block';
+                if (currentImage) {
+                    currentImage.style.opacity = '0.5';
+                }
+            };
+            reader.readAsDataURL(file);
+        } else {
+            previewContainer.style.display = 'none';
+            if (currentImage) {
+                currentImage.style.opacity = '1';
+            }
+        }
+    }
+</script>

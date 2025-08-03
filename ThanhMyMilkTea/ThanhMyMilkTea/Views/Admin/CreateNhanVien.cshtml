@@ -1,0 +1,200 @@
+﻿@model NhanVien
+@{
+    ViewData["Title"] = "Thêm nhân viên";
+    Layout = "_AdminLayout";
+}
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Thêm nhân viên mới</h1>
+    <a class="btn btn-outline-secondary" asp-action="NhanVien">
+        <i class="fas fa-arrow-left"></i> Quay lại
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger">
+                <i class="fas fa-exclamation-triangle"></i> @TempData["Error"]
+            </div>
+        }
+
+        <form method="post">
+            <!-- Thông tin tài khoản -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-user-lock"></i> Thông tin tài khoản</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Tên đăng nhập *</label>
+                                <input type="text" class="form-control" name="username" required placeholder="Nhập tên đăng nhập">
+                                <div class="form-text">Tên đăng nhập phải là duy nhất trong hệ thống</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Mật khẩu *</label>
+                                <input type="password" class="form-control" name="password" required placeholder="Nhập mật khẩu">
+                                <div class="form-text">Mật khẩu phải có ít nhất 6 ký tự</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thông tin cá nhân -->
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0"><i class="fas fa-user"></i> Thông tin cá nhân</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Tên nhân viên *</label>
+                                <input type="text" class="form-control" name="TenNv" required placeholder="Nhập họ tên đầy đủ">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Chức vụ</label>
+                                <select class="form-select" name="ChucVu">
+                                    <option value="">-- Chọn chức vụ --</option>
+                                    <option value="Thu ngân">Thu ngân</option>
+                                    <option value="Pha chế">Pha chế</option>
+                                    <option value="Quản lý ca">Quản lý ca</option>
+                                    <option value="Giao hàng">Giao hàng</option>
+                                    <option value="Tạp vụ">Tạp vụ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" name="Email" placeholder="example@email.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Số điện thoại</label>
+                                <input type="text" class="form-control" name="Sdt" placeholder="0901234567">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Địa chỉ</label>
+                        <input type="text" class="form-control" name="DiaChi" placeholder="Nhập địa chỉ">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thông tin công việc -->
+            <div class="card mb-4">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="mb-0"><i class="fas fa-briefcase"></i> Thông tin công việc</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Lương</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" name="Luong" placeholder="0" min="0">
+                                    <span class="input-group-text">VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Ngày vào làm</label>
+                                <input type="date" class="form-control" name="NgayVaoLam" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Quản lý</label>
+                                <select class="form-select" name="MaQl">
+                                    <option value="">-- Chọn quản lý --</option>
+                                    @foreach (var ql in (List<QuanLy>)ViewBag.QuanLys)
+                                    {
+                                        <option value="@ql.MaQl">@ql.TenQl</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="fas fa-save"></i> Lưu nhân viên
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Auto-generate username from name
+        const nameInput = document.querySelector('input[name="TenNv"]');
+        const usernameInput = document.querySelector('input[name="username"]');
+
+        nameInput.addEventListener('input', function() {
+            if (!usernameInput.value) { // Only auto-generate if username is empty
+                let name = this.value.toLowerCase()
+                    .replace(/\s+/g, '') // Remove spaces
+                    .replace(/[àáạảãâầấậẩẫăằắặẳẵ]/g, 'a')
+                    .replace(/[èéẹẻẽêềếệểễ]/g, 'e')
+                    .replace(/[ìíịỉĩ]/g, 'i')
+                    .replace(/[òóọỏõôồốộổỗơờớợởỡ]/g, 'o')
+                    .replace(/[ùúụủũưừứựửữ]/g, 'u')
+                    .replace(/[ỳýỵỷỹ]/g, 'y')
+                    .replace(/đ/g, 'd')
+                    .replace(/[^a-z0-9]/g, ''); // Remove special characters
+
+                if (name.length > 0) {
+                    usernameInput.value = name + Math.floor(Math.random() * 100);
+                }
+            }
+        });
+
+        // Password strength indicator
+        const passwordInput = document.querySelector('input[name="password"]');
+        passwordInput.addEventListener('input', function() {
+            const password = this.value;
+            let strength = 0;
+
+            if (password.length >= 6) strength++;
+            if (/[a-z]/.test(password)) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[^a-zA-Z0-9]/.test(password)) strength++;
+
+            const colors = ['#dc3545', '#fd7e14', '#ffc107', '#20c997', '#28a745'];
+            const texts = ['Rất yếu', 'Yếu', 'Trung bình', 'Mạnh', 'Rất mạnh'];
+
+            let indicator = this.parentNode.querySelector('.password-strength');
+            if (!indicator) {
+                indicator = document.createElement('div');
+                indicator.className = 'password-strength form-text';
+                this.parentNode.appendChild(indicator);
+            }
+
+            if (password.length > 0) {
+                indicator.innerHTML = `Độ mạnh mật khẩu: <span style="color: ${colors[strength-1]}">${texts[strength-1]}</span>`;
+            } else {
+                indicator.innerHTML = '';
+            }
+        });
+    });
+</script>

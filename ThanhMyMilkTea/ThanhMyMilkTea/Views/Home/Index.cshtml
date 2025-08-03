@@ -1,0 +1,423 @@
+﻿@model List<SanPham>
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, var(--primary) 0%, #A0522D 100%);
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="coffee" patternUnits="userSpaceOnUse" width="20" height="20"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23coffee)"/></svg>');
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+    .feature-card {
+        transition: all 0.3s ease;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+    .feature-icon {
+        transition: all 0.3s ease;
+    }
+
+    .feature-card:hover .feature-icon {
+        transform: scale(1.1);
+    }
+
+    .product-card {
+        transition: all 0.3s ease;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        overflow: hidden;
+    }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+    .product-image {
+        height: 220px;
+        background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+        border-radius: 15px 15px 0 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+
+    .product-card:hover .product-image img {
+        transform: scale(1.05);
+    }
+
+    .product-image .fallback-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #6c757d;
+        font-size: 3rem;
+    }
+
+    .price-tag {
+        background: linear-gradient(135deg, var(--primary), #A0522D);
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .btn-add-cart {
+        background: var(--primary);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+        .btn-add-cart:hover {
+            background: #A0522D;
+            transform: scale(1.1);
+            color: white;
+        }
+
+    .section-title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+
+    .category-badge {
+        background: var(--secondary);
+        color: var(--dark);
+        padding: 0.2rem 0.6rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .stock-status {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #28a745;
+        color: white;
+        padding: 0.2rem 0.5rem;
+        border-radius: 10px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+        .stock-status.out-of-stock {
+            background: #dc3545;
+        }
+
+    @@media (max-width: 768px) {
+        .hero-section h1
+
+    {
+        font-size: 2rem;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+
+    }
+</style>
+
+<!-- Hero Section -->
+<div class="hero-section text-white text-center py-5 mb-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-3">
+            <i class="fas fa-coffee me-3"></i> Thanh My Milk Tea
+        </h1>
+        <p class="lead mb-4">Thương hiệu trà sữa ngon nhất Việt Nam</p>
+        <p class="mb-4">Hương vị đậm đà - Chất lượng tuyệt hảo - Phục vụ tận tâm</p>
+        <a class="btn btn-light btn-lg px-4" asp-controller="SanPham" asp-action="Index">
+            <i class="fas fa-shopping-bag me-2"></i> Đặt hàng ngay
+        </a>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="row mb-5">
+    <div class="col-md-4 mb-3">
+        <div class="card feature-card h-100 text-center p-3">
+            <div class="card-body">
+                <i class="fas fa-leaf feature-icon fa-3x text-success mb-3"></i>
+                <h5 class="fw-bold">Nguyên liệu tự nhiên</h5>
+                <p class="text-muted">100% nguyên liệu tự nhiên, không chất bảo quản có hại</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card feature-card h-100 text-center p-3">
+            <div class="card-body">
+                <i class="fas fa-shipping-fast feature-icon fa-3x text-primary mb-3"></i>
+                <h5 class="fw-bold">Giao hàng nhanh</h5>
+                <p class="text-muted">Giao hàng trong vòng 30 phút trong nội thành</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card feature-card h-100 text-center p-3">
+            <div class="card-body">
+                <i class="fas fa-star feature-icon fa-3x text-warning mb-3"></i>
+                <h5 class="fw-bold">Chất lượng cao</h5>
+                <p class="text-muted">Đảm bảo chất lượng và hương vị tuyệt hảo</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Products Section -->
+<div class="text-center mb-4">
+    <h2 class="section-title fw-bold">Sản phẩm nổi bật</h2>
+</div>
+
+<div class="row">
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var item in Model.Take(6))
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card product-card h-100">
+                    <div class="product-image position-relative">
+                        @if (!string.IsNullOrEmpty(item.HinhAnh))
+                        {
+                            <img src="~/images/products/@item.HinhAnh"
+                                 alt="@item.TenSp"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                            <div class="fallback-icon" style="display: none;">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="fallback-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                        }
+
+                        <!-- Stock Status -->
+                        @if (item.SoLuongTon > 0)
+                        {
+                            <div class="stock-status">Còn hàng</div>
+                        }
+                        else
+                        {
+                            <div class="stock-status out-of-stock">Hết hàng</div>
+                        }
+                    </div>
+
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title fw-bold mb-0">@item.TenSp</h5>
+                            @if (!string.IsNullOrEmpty(item.MaDanhMucNavigation?.TenDanhMuc))
+                            {
+                                <span class="category-badge">@item.MaDanhMucNavigation.TenDanhMuc</span>
+                            }
+                        </div>
+
+                        @if (!string.IsNullOrEmpty(item.MoTa))
+                        {
+                            <p class="card-text text-muted small mb-3">
+                                @(item.MoTa.Length > 80 ? item.MoTa.Substring(0, 80) + "..." : item.MoTa)
+                            </p>
+                        }
+
+                        @if (!string.IsNullOrEmpty(item.XuatXu))
+                        {
+                            <p class="small text-muted mb-2">
+                                <i class="fas fa-map-marker-alt me-1"></i>Xuất xứ: @item.XuatXu
+                            </p>
+                        }
+                    </div>
+
+                    <div class="card-footer bg-transparent border-0 pt-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price-tag">@item.Gia.ToString("N0") VNĐ</span>
+                            <div class="d-flex gap-2">
+                                <a class="btn btn-outline-primary btn-sm"
+                                   asp-controller="SanPham"
+                                   asp-action="Details"
+                                   asp-route-id="@item.MaSp">
+                                    <i class="fas fa-eye me-1"></i>Chi tiết
+                                </a>
+                                @if (item.SoLuongTon > 0)
+                                {
+                                    <button class="btn-add-cart" onclick="addToCart('@item.MaSp')" title="Thêm vào giỏ">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                }
+                                else
+                                {
+                                    <button class="btn-add-cart" disabled title="Hết hàng">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="col-12 text-center py-5">
+            <i class="fas fa-coffee fa-4x text-muted mb-3"></i>
+            <h4 class="text-muted">Chưa có sản phẩm nào</h4>
+            <p class="text-muted">Vui lòng quay lại sau</p>
+        </div>
+    }
+</div>
+
+<!-- Call to Action -->
+<div class="text-center mt-5 py-4">
+    <div class="bg-light rounded-3 p-4">
+        <h3 class="fw-bold mb-3">Khám phá thêm nhiều sản phẩm hấp dẫn</h3>
+        <p class="text-muted mb-3">Hơn 50+ loại trà sữa và đồ uống đa dạng đang chờ bạn</p>
+        <a class="btn btn-primary btn-lg px-4" asp-controller="SanPham" asp-action="Index">
+            Xem tất cả sản phẩm <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function addToCart(maSP) {
+        @if (Context.Session.GetString("Username") == null)
+        {
+            <text>
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'Chưa đăng nhập',
+                            text: 'Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng!',
+                            showCancelButton: true,
+                            confirmButtonText: 'Đăng nhập ngay',
+                            cancelButtonText: 'Hủy'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.href = '@Url.Action("Login", "Account")';
+                            }
+                        });
+                        return;
+            </text>
+        }
+
+            // Show loading
+            const button = event.target.closest('button');
+            const originalContent = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            button.disabled = true;
+
+            $.post('@Url.Action("AddToCart", "GioHang")', { maSP: maSP })
+                .done(function(data) {
+                    if (data.success) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Thành công!',
+                            text: data.message,
+                            timer: 2000,
+                            showConfirmButton: false
+                        });
+
+                        // Update cart badge if exists
+                        updateCartBadge();
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Lỗi!',
+                            text: data.message
+                        });
+                    }
+                })
+                .fail(function() {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Lỗi!',
+                        text: 'Có lỗi xảy ra. Vui lòng thử lại!'
+                    });
+                })
+                .always(function() {
+                    // Restore button
+                    button.innerHTML = originalContent;
+                    button.disabled = false;
+                });
+        }
+
+        function updateCartBadge() {
+            // Get cart count from server
+            $.get('@Url.Action("GetCartCount", "GioHang")')
+                .done(function(count) {
+                    const badge = document.querySelector('.cart-badge');
+                    if (badge) {
+                        badge.textContent = count;
+                        badge.style.animation = 'bounce 0.5s ease';
+                        setTimeout(() => {
+                            badge.style.animation = '';
+                        }, 500);
+                    }
+                });
+        }
+
+        // Initialize cart count on page load
+        $(document).ready(function() {
+        @if (Context.Session.GetString("Username") != null)
+        {
+            <text>updateCartBadge();</text>
+        }
+        });
+    </script>
+
+    <!-- Include SweetAlert2 for better notifications -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+}

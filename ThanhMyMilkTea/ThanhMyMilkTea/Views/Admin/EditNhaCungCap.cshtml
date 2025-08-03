@@ -1,0 +1,62 @@
+﻿@model NhaCungCap
+@{
+    ViewData["Title"] = "Sửa nhà cung cấp";
+    Layout = "_AdminLayout";
+}
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Sửa nhà cung cấp</h1>
+    <a class="btn btn-outline-secondary" asp-action="NhaCungCap">
+        <i class="fas fa-arrow-left"></i> Quay lại
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <form method="post">
+            <input type="hidden" name="MaNcc" value="@Model.MaNcc">
+            <input type="hidden" name="TrangThai" value="@Model.TrangThai">
+
+            <div class="mb-3">
+                <label class="form-label">Mã nhà cung cấp</label>
+                <input type="text" class="form-control" value="@Model.MaNcc" readonly>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Tên nhà cung cấp *</label>
+                        <input type="text" class="form-control" name="TenNcc" value="@Model.TenNcc" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" name="Email" value="@Model.Email">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Số điện thoại</label>
+                        <input type="text" class="form-control" name="Sdt" value="@Model.Sdt">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Địa chỉ</label>
+                        <input type="text" class="form-control" name="DiaChi" value="@Model.DiaChi">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Cập nhật
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,853 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\sanpham\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\sanpham\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\nhanvien\\sanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\nhanvien\\sanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\giohang\\ordersuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\giohang\\ordersuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\giohang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\giohang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\giohang\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\giohang\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\donhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\donhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\donhang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\donhang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\sanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\sanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\nhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\nhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\khachhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\khachhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\editsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\editsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\editnhacungcap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\editnhacungcap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\editdanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\editdanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\donhangdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\donhangdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\donhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\donhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\danhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\danhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\createsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\createsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\createnhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\createnhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\createnhacungcap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\createnhacungcap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\createdanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\createdanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\thanhmymilkteacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\thanhmymilkteacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\danhmucsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\danhmucsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\controllers\\nhanviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\controllers\\nhanviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\editnhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\editnhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\nhanvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\nhanvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\nhanvien\\donhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\nhanvien\\donhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\views\\admin\\nhacungcap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\views\\admin\\nhacungcap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|c:\\users\\thanh my\\documents\\zalo received files\\thanhmymilktea\\thanhmymilktea\\thanhmymilktea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4718BF-9744-4EDA-9861-7C4098282EE8}|ThanhMyMilkTea\\ThanhMyMilkTea.csproj|solutionrelative:thanhmymilktea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:41:56.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAJ4BAAAAAAAAAAAAAMgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T09:21:54.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SanPham.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\NhanVien\\SanPham.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\NhanVien\\SanPham.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\NhanVien\\SanPham.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\NhanVien\\SanPham.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:53:50.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\SanPham\\Details.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\SanPham\\Details.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\SanPham\\Details.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\SanPham\\Details.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAEUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T09:33:53.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\SanPham\\Index.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\SanPham\\Index.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\SanPham\\Index.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\SanPham\\Index.cshtml",
+              "ViewState": "AgIAAGIBAAAAAAAAAAAAADEBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:35:31.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAEQCAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T15:23:46.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAALIAAAAAAAAAAAAhwEIBAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T09:22:03.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderSuccess.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\GioHang\\OrderSuccess.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\GioHang\\OrderSuccess.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\GioHang\\OrderSuccess.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\GioHang\\OrderSuccess.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:37:32.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\GioHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\GioHang\\Index.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\GioHang\\Index.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\GioHang\\Index.cshtml",
+              "ViewState": "AgIAAOYBAAAAAAAAAAAAAMABAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:36:24.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\GioHang\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\GioHang\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\GioHang\\Checkout.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\GioHang\\Checkout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:37:04.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\DonHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\DonHang\\Index.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\DonHang\\Index.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\DonHang\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:38:29.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\DonHang\\Details.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\DonHang\\Details.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\DonHang\\Details.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\DonHang\\Details.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAFAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:38:43.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SanPham.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\SanPham.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\SanPham.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\SanPham.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\SanPham.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAALoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:41:24.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NhanVien.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\NhanVien.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\NhanVien.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\NhanVien.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\NhanVien.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAiwFkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:56:20.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "KhachHang.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\KhachHang.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\KhachHang.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\KhachHang.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\KhachHang.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAiwE4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:52:31.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:40:45.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EditSanPham.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\EditSanPham.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\EditSanPham.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\EditSanPham.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\EditSanPham.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAJ8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:54:09.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EditNhaCungCap.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\EditNhaCungCap.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\EditNhaCungCap.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\EditNhaCungCap.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\EditNhaCungCap.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwD0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:56:04.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EditDanhMuc.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\EditDanhMuc.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\EditDanhMuc.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\EditDanhMuc.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\EditDanhMuc.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:51:16.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DonHangDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\DonHangDetails.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\DonHangDetails.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\DonHangDetails.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\DonHangDetails.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAiwI8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:55:13.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DonHang.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\DonHang.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\DonHang.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\DonHang.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\DonHang.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:52:17.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DanhMuc.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\DanhMuc.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\DanhMuc.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\DanhMuc.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\DanhMuc.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:50:51.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CreateSanPham.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\CreateSanPham.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\CreateSanPham.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\CreateSanPham.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\CreateSanPham.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:41:40.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateNhanVien.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\CreateNhanVien.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\CreateNhanVien.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\CreateNhanVien.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\CreateNhanVien.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:56:34.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CreateNhaCungCap.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\CreateNhaCungCap.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\CreateNhaCungCap.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\CreateNhaCungCap.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\CreateNhaCungCap.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwDUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:55:53.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateDanhMuc.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\CreateDanhMuc.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\CreateDanhMuc.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\CreateDanhMuc.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\CreateDanhMuc.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:51:05.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ThanhMyMilkTeaContext.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\ThanhMyMilkTeaContext.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\ThanhMyMilkTeaContext.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\ThanhMyMilkTeaContext.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\ThanhMyMilkTeaContext.cs",
+              "ViewState": "AgIAABEBAAAAAAAAAAAiwAcBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:17:52.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\TaiKhoan.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\TaiKhoan.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\TaiKhoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:20:03.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\SanPham.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\SanPham.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\SanPham.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:18:14.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "QuanLy.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\QuanLy.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\QuanLy.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\QuanLy.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\QuanLy.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:19:49.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DanhMucSp.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\DanhMucSp.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\DanhMucSp.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\DanhMucSp.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\DanhMucSp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:19:21.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ChiTietHoaDon.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\ChiTietHoaDon.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\ChiTietHoaDon.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\ChiTietHoaDon.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\ChiTietHoaDon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:19:03.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\CartItem.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T02:44:53.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Controllers\\SanPhamController.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Controllers\\SanPhamController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:20:45.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "NhanVienController.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\NhanVienController.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Controllers\\NhanVienController.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\NhanVienController.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Controllers\\NhanVienController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwBcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T02:49:33.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:10:24.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAowNkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T02:18:35.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\NhanVien.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\NhanVien.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\NhanVien.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\NhanVien.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:18:41.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:34:59.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUBAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:35:13.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "NhaCungCap.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\NhaCungCap.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\NhaCungCap.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\NhaCungCap.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\NhaCungCap.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:19:37.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "KhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\KhachHang.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\KhachHang.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\KhachHang.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\KhachHang.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:18:27.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:20:16.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "GioHangController.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\GioHangController.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Controllers\\GioHangController.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\GioHangController.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Controllers\\GioHangController.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAwwKYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T02:34:06.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DonHangController.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\DonHangController.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Controllers\\DonHangController.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\DonHangController.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Controllers\\DonHangController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwBkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T02:38:17.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T02:40:29.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "EditNhanVien.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\EditNhanVien.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\EditNhanVien.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\EditNhanVien.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\EditNhanVien.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAFsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:56:45.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DonHang.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\NhanVien\\DonHang.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\NhanVien\\DonHang.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\NhanVien\\DonHang.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\NhanVien\\DonHang.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:53:23.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\NhanVien\\Index.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\NhanVien\\Index.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\NhanVien\\Index.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\NhanVien\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:53:06.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\appsettings.json",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\appsettings.json",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\appsettings.json",
+              "RelativeToolTip": "ThanhMyMilkTea\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-30T09:16:58.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "NhaCungCap.cshtml",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\NhaCungCap.cshtml",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Views\\Admin\\NhaCungCap.cshtml",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Views\\Admin\\NhaCungCap.cshtml",
+              "RelativeToolTip": "ThanhMyMilkTea\\Views\\Admin\\NhaCungCap.cshtml",
+              "ViewState": "AgIAADgAAAAAAAAAAAAiwFUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T02:51:31.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Program.cs",
+              "RelativeDocumentMoniker": "ThanhMyMilkTea\\Program.cs",
+              "ToolTip": "C:\\Users\\THANH MY\\Documents\\Zalo Received Files\\ThanhMyMilkTea\\ThanhMyMilkTea\\ThanhMyMilkTea\\Program.cs",
+              "RelativeToolTip": "ThanhMyMilkTea\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T09:17:14.585Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

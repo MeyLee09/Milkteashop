@@ -1,0 +1,80 @@
+﻿@model List<SanPham>
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+    Layout = "_AdminLayout";
+}
+
+<div class="row mb-4">
+    <div class="col-md-8">
+        <h2><i class="fas fa-coffee"></i> Danh sách sản phẩm</h2>
+    </div>
+    <div class="col-md-4">
+        <form method="get" class="d-flex">
+            <input type="text" class="form-control" name="search" placeholder="Tìm kiếm sản phẩm..." value="@ViewBag.Search">
+            <button class="btn btn-primary ms-2" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Mã SP</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Danh mục</th>
+                        <th>Nhà cung cấp</th>
+                        <th>Giá</th>
+                        <th>Tồn kho</th>
+                        <th>Đơn vị</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MaSp</td>
+                            <td>@item.TenSp</td>
+                            <td>@item.MaDanhMucNavigation?.TenDanhMuc</td>
+                            <td>@item.MaNccNavigation?.TenNcc</td>
+                            <td>@item.Gia.ToString("N0") VNĐ</td>
+                            <td>
+                                @if (item.SoLuongTon <= 10)
+                                {
+                                    <span class="badge bg-danger">@item.SoLuongTon</span>
+                                }
+                                else if (item.SoLuongTon <= 50)
+                                {
+                                    <span class="badge bg-warning">@item.SoLuongTon</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-success">@item.SoLuongTon</span>
+                                }
+                            </td>
+                            <td>@item.DonViTinh</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        @if (ViewBag.TotalPages > 1)
+        {
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                    {
+                        <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                            <a class="page-link" asp-action="SanPham" asp-route-page="@i" asp-route-search="@ViewBag.Search">@i</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+    </div>
+</div>

@@ -1,0 +1,86 @@
+﻿@model List<NhaCungCap>
+@{
+    ViewData["Title"] = "Quản lý nhà cung cấp";
+    Layout = "_AdminLayout";
+}
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Quản lý nhà cung cấp</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a class="btn btn-primary" asp-action="CreateNhaCungCap">
+            <i class="fas fa-plus"></i> Thêm nhà cung cấp
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Mã NCC</th>
+                        <th>Tên nhà cung cấp</th>
+                        <th>Địa chỉ</th>
+                        <th>Điện thoại</th>
+                        <th>Email</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MaNcc</td>
+                            <td>@item.TenNcc</td>
+                            <td>@item.DiaChi</td>
+                            <td>@item.Sdt</td>
+                            <td>@item.Email</td>
+                            <td>
+                                @if (item.TrangThai == true)
+                                {
+                                    <span class="badge bg-success">Hoạt động</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Ngừng hoạt động</span>
+                                }
+                            </td>
+                            <td>
+                                <a class="btn btn-primary btn-sm" asp-action="EditNhaCungCap" asp-route-id="@item.MaNcc">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a class="btn btn-warning btn-sm" asp-action="ToggleNhaCungCap" asp-route-id="@item.MaNcc"
+                                   onclick="return confirm('Bạn có chắc muốn thay đổi trạng thái?')">
+                                    @if (item.TrangThai == true)
+                                    {
+                                        <i class="fas fa-eye-slash"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fas fa-eye"></i>
+                                    }
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        @if (ViewBag.TotalPages > 1)
+        {
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                    {
+                        <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                            <a class="page-link" asp-action="NhaCungCap" asp-route-page="@i">@i</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+    </div>
+</div>

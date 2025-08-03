@@ -1,0 +1,39 @@
+﻿@model DanhMucSp
+@{
+    ViewData["Title"] = "Sửa danh mục";
+    Layout = "_AdminLayout";
+}
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Sửa danh mục</h1>
+    <a class="btn btn-outline-secondary" asp-action="DanhMuc">
+        <i class="fas fa-arrow-left"></i> Quay lại
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <form method="post">
+            <input type="hidden" name="MaDanhMuc" value="@Model.MaDanhMuc">
+            <input type="hidden" name="TrangThai" value="@Model.TrangThai">
+
+            <div class="mb-3">
+                <label class="form-label">Mã danh mục</label>
+                <input type="text" class="form-control" value="@Model.MaDanhMuc" readonly>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Tên danh mục *</label>
+                <input type="text" class="form-control" name="TenDanhMuc" value="@Model.TenDanhMuc" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mô tả</label>
+                <textarea class="form-control" name="MoTa" rows="4">@Model.MoTa</textarea>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Cập nhật
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

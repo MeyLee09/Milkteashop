@@ -1,0 +1,355 @@
+﻿@model List<SanPham>
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+}
+
+<style>
+    .product-header {
+        background: linear-gradient(135deg, var(--light) 0%, white 100%);
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .search-form {
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+        .search-form input {
+            border: none;
+            border-radius: 25px 0 0 25px;
+        }
+
+        .search-form button {
+            border-radius: 0 25px 25px 0;
+            border: none;
+        }
+
+    .category-sidebar {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+        .category-sidebar .card-header {
+            background: linear-gradient(135deg, var(--primary), #A0522D);
+            color: white;
+            border-radius: 15px 15px 0 0;
+            border: none;
+        }
+
+    .list-group-item {
+        border: none;
+        transition: all 0.3s ease;
+        padding: 0.8rem 1.2rem;
+    }
+
+        .list-group-item:hover {
+            background: var(--light);
+            transform: translateX(5px);
+        }
+
+        .list-group-item.active {
+            background: var(--primary);
+            color: white;
+        }
+
+    .product-card {
+        transition: all 0.3s ease;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+    .product-image {
+        height: 200px;
+        background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+        overflow: hidden;
+        position: relative;
+    }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+
+    .product-card:hover .product-image img {
+        transform: scale(1.05);
+    }
+
+    .product-image .fallback-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #6c757d;
+        font-size: 3rem;
+    }
+
+    .price-tag {
+        background: linear-gradient(135deg, var(--primary), #A0522D);
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+
+    .btn-add-cart {
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+        .btn-add-cart:hover {
+            background: #A0522D;
+            transform: scale(1.1);
+            color: white;
+        }
+
+    .category-badge {
+        background: var(--secondary);
+        color: var(--dark);
+        padding: 0.2rem 0.6rem;
+        border-radius: 15px;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    .pagination .page-link {
+        border-radius: 50px;
+        margin: 0 0.2rem;
+        border: none;
+        color: var(--primary);
+    }
+
+    .pagination .page-item.active .page-link {
+        background: var(--primary);
+        border-color: var(--primary);
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        color: #6c757d;
+    }
+</style>
+
+<!-- Header Section -->
+<div class="product-header">
+    <div class="row align-items-center">
+        <div class="col-md-8">
+            <h2 class="mb-0 fw-bold">
+                <i class="fas fa-coffee text-primary me-2"></i>
+                Danh sách sản phẩm
+            </h2>
+            <p class="text-muted mb-0 mt-1">Khám phá những hương vị tuyệt vời</p>
+        </div>
+        <div class="col-md-4">
+            <form method="get" class="search-form d-flex">
+                <input type="text" class="form-control" name="search"
+                       placeholder="Tìm kiếm sản phẩm..." value="@ViewBag.Search">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Sidebar Categories -->
+    <div class="col-md-3 mb-4">
+        <div class="card category-sidebar">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-list me-2"></i> Danh mục</h5>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item @(string.IsNullOrEmpty(ViewBag.Category) ? "active" : "")"
+                   asp-action="Index">
+                    <i class="fas fa-th-large me-2"></i>Tất cả
+                </a>
+                @foreach (var dm in (List<DanhMucSp>)ViewBag.DanhMucs)
+                {
+                    <a class="list-group-item @(ViewBag.Category == dm.MaDanhMuc ? "active" : "")"
+                       asp-action="Index" asp-route-category="@dm.MaDanhMuc">
+                        <i class="fas fa-tag me-2"></i>@dm.TenDanhMuc
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="col-md-9">
+        @if (Model != null && Model.Any())
+        {
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card product-card h-100">
+                            <div class="product-image">
+                                @if (!string.IsNullOrEmpty(item.HinhAnh))
+                                {
+                                    <img src="~/images/products/@item.HinhAnh"
+                                         alt="@item.TenSp"
+                                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                                    <div class="fallback-icon" style="display: none;">
+                                        <i class="fas fa-coffee"></i>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="fallback-icon">
+                                        <i class="fas fa-coffee"></i>
+                                    </div>
+                                }
+                            </div>
+
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="card-title fw-bold mb-0">@item.TenSp</h5>
+                                    @if (!string.IsNullOrEmpty(item.MaDanhMucNavigation?.TenDanhMuc))
+                                    {
+                                        <span class="category-badge">@item.MaDanhMucNavigation.TenDanhMuc</span>
+                                    }
+                                </div>
+
+                                @if (!string.IsNullOrEmpty(item.MoTa))
+                                {
+                                    <p class="card-text text-muted small">
+                                        @(item.MoTa.Length > 80 ? item.MoTa.Substring(0, 80) + "..." : item.MoTa)
+                                    </p>
+                                }
+                            </div>
+
+                            <div class="card-footer bg-transparent border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">@item.Gia.ToString("N0") VNĐ</span>
+                                    <div class="d-flex gap-2">
+                                        <a class="btn btn-outline-primary btn-sm"
+                                           asp-action="Details" asp-route-id="@item.MaSp">
+                                            <i class="fas fa-eye me-1"></i>Chi tiết
+                                        </a>
+                                        <button class="btn-add-cart" onclick="addToCart('@item.MaSp')"
+                                                title="Thêm vào giỏ">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="empty-state">
+                <i class="fas fa-coffee fa-4x mb-3"></i>
+                <h4>Không tìm thấy sản phẩm</h4>
+                <p>Vui lòng thử lại với từ khóa khác</p>
+            </div>
+        }
+
+        <!-- Pagination -->
+        @if (ViewBag.TotalPages > 1)
+        {
+            <nav aria-label="Page navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    @if (ViewBag.CurrentPage > 1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.CurrentPage - 1)"
+                               asp-route-search="@ViewBag.Search" asp-route-category="@ViewBag.Category">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                    }
+
+                    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                    {
+                        <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                            <a class="page-link" asp-action="Index" asp-route-page="@i"
+                               asp-route-search="@ViewBag.Search" asp-route-category="@ViewBag.Category">@i</a>
+                        </li>
+                    }
+
+                    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.CurrentPage + 1)"
+                               asp-route-search="@ViewBag.Search" asp-route-category="@ViewBag.Category">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function addToCart(maSP) {
+        @if (Context.Session.GetString("Username") == null)
+        {
+            <text>
+                        if (confirm('Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng!')) {
+                            window.location.href = '@Url.Action("Login", "Account")';
+                        }
+                        return;
+            </text>
+        }
+
+            const button = event.target.closest('button');
+            const originalContent = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            button.disabled = true;
+
+            $.post('@Url.Action("AddToCart", "GioHang")', { maSP: maSP })
+                .done(function(data) {
+                    if (data.success) {
+                        // Success notification
+                        const notification = $(`
+                            <div class="alert alert-success alert-dismissible fade show position-fixed"
+                                 style="top: 20px; right: 20px; z-index: 9999;">
+                                <i class="fas fa-check-circle me-2"></i>${data.message}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        `);
+                        $('body').append(notification);
+                        setTimeout(() => notification.alert('close'), 3000);
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .fail(function() {
+                    alert('Có lỗi xảy ra. Vui lòng thử lại!');
+                })
+                .always(function() {
+                    button.innerHTML = originalContent;
+                    button.disabled = false;
+                });
+        }
+    </script>
+}

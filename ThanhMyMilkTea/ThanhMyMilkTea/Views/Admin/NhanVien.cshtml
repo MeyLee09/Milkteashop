@@ -1,0 +1,90 @@
+﻿@model List<NhanVien>
+@{
+    ViewData["Title"] = "Quản lý nhân viên";
+    Layout = "_AdminLayout";
+}
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Quản lý nhân viên</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a class="btn btn-primary" asp-action="CreateNhanVien">
+            <i class="fas fa-plus"></i> Thêm nhân viên
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Mã NV</th>
+                        <th>Tên nhân viên</th>
+                        <th>Chức vụ</th>
+                        <th>Email</th>
+                        <th>Điện thoại</th>
+                        <th>Lương</th>
+                        <th>Ngày vào làm</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MaNv</td>
+                            <td>@item.TenNv</td>
+                            <td>@item.ChucVu</td>
+                            <td>@item.Email</td>
+                            <td>@item.Sdt</td>
+                            <td>@item.Luong?.ToString("N0") VNĐ</td>
+                            <td>@item.NgayVaoLam?.ToString("dd/MM/yyyy")</td>
+                            <td>
+                                @if (item.TrangThai == true)
+                                {
+                                    <span class="badge bg-success">Đang làm</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Đã nghỉ</span>
+                                }
+                            </td>
+                            <td>
+                                <a class="btn btn-primary btn-sm" asp-action="EditNhanVien" asp-route-id="@item.MaNv">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a class="btn btn-warning btn-sm" asp-action="ToggleNhanVien" asp-route-id="@item.MaNv"
+                                   onclick="return confirm('Bạn có chắc muốn thay đổi trạng thái?')">
+                                    @if (item.TrangThai == true)
+                                    {
+                                        <i class="fas fa-user-times"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fas fa-user-check"></i>
+                                    }
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        @if (ViewBag.TotalPages > 1)
+        {
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                    {
+                        <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                            <a class="page-link" asp-action="NhanVien" asp-route-page="@i">@i</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+    </div>
+</div>

@@ -1,0 +1,71 @@
+﻿@model List<HoaDon>
+@{
+    ViewData["Title"] = "Đơn hàng của tôi";
+}
+
+<h2><i class="fas fa-receipt"></i> Đơn hàng của tôi</h2>
+
+@if (Model.Count == 0)
+{
+    <div class="text-center py-5">
+        <i class="fas fa-receipt fa-5x text-muted mb-3"></i>
+        <h4>Chưa có đơn hàng nào</h4>
+        <p class="text-muted">Bạn chưa có đơn hàng nào</p>
+        <a class="btn btn-primary" asp-controller="SanPham" asp-action="Index">
+            <i class="fas fa-shopping-bag"></i> Mua sắm ngay
+        </a>
+    </div>
+}
+else
+{
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-12 mb-3">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-0">Đơn hàng #@item.MaHd</h6>
+                            <small class="text-muted">@item.NgayLap?.ToString("dd/MM/yyyy HH:mm")</small>
+                        </div>
+                        <div>
+                            @{
+                                string badgeClass = item.TrangThaiDonHang switch
+                                {
+                                    "Chờ xác nhận" => "bg-warning",
+                                    "Đã xác nhận" => "bg-info",
+                                    "Đang giao" => "bg-primary",
+                                    "Đã giao" => "bg-success",
+                                    "Đã hủy" => "bg-danger",
+                                    _ => "bg-secondary"
+                                };
+                            }
+                            <span class="badge @badgeClass">@item.TrangThaiDonHang</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="mb-1"><strong>Tổng tiền:</strong> @item.TongTien?.ToString("N0") VNĐ</p>
+                                <p class="mb-1"><strong>Giảm giá:</strong> @item.GiamGia?.ToString("N0") VNĐ</p>
+                                <p class="mb-1"><strong>Thành tiền:</strong> <span class="text-success">@item.ThanhTien?.ToString("N0") VNĐ</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-1"><strong>Thanh toán:</strong> @item.HinhThucThanhToan</p>
+                                @if (!string.IsNullOrEmpty(item.GhiChu))
+                                {
+                                    <p class="mb-1"><strong>Ghi chú:</strong> @item.GhiChu</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary btn-sm" asp-action="Details" asp-route-id="@item.MaHd">
+                            <i class="fas fa-eye"></i> Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
