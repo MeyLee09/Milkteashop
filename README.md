@@ -1,41 +1,63 @@
 # Dự án: Xây dựng website bán trà sữa ( ThanhMy MilkTea)
 
 ## 📝 Mô tả
-Đây là website giới thiệu và đặt hàng các loại trà sữa của quán Meylee. Người dùng có thể xem thực đơn.
+Đây là website giới thiệu và đặt hàng các loại trà sữa của quán Thanh My MilkTea. Người dùng có thể xem thực đơn.
 
 ## 📁 Cấu trúc thư mục
+
 ThanhMyMilkTea/
 │
-├── Connected Services/ # Dịch vụ được kết nối như Azure, Web API...
-├── Dependencies/ # Các gói NuGet phụ thuộc
-├── Properties/
-│ └── launchSettings.json # Thiết lập khi chạy ứng dụng
+├── 📦 Connected Services/ # Dịch vụ tích hợp ngoài (Web APIs, Azure,...)
+├── 📦 Dependencies/ # Các gói NuGet sử dụng
 │
-├── wwwroot/ # Tài nguyên tĩnh phục vụ frontend
-│ ├── css/ # Stylesheets
-│ ├── images/ # Hình ảnh giao diện
-│ ├── js/ # JavaScript
-│ ├── lib/ # Thư viện frontend (Bootstrap, jQuery,...)
-│ └── favicon.ico # Biểu tượng trang web
+├── 🏷️ Properties/
+│ └── 🧾 launchSettings.json # Cấu hình khi chạy ứng dụng
 │
-├── Controllers/ # Các controller điều khiển logic ứng dụng
-│ ├── AccountController.cs
-│ ├── AdminController.cs
-│ ├── DonHangController.cs
-│ ├── GioHangController.cs
-│ ├── HomeController.cs
-│ ├── NhanVienController.cs
-│ └── SanPhamController.cs
+├── 🌐 wwwroot/ # Tài nguyên tĩnh phục vụ phía client
+│ ├── 🎨 css/ # Giao diện CSS
+│ ├── 🖼️ images/ # Hình ảnh
+│ ├── 📜 js/ # File JavaScript
+│ ├── 📚 lib/ # Thư viện frontend (Bootstrap, jQuery,...)
+│ └── 🌟 favicon.ico # Biểu tượng trình duyệt
 │
-├── Models/ # Các lớp mô hình dữ liệu
+├── 🎮 Controllers/ # Xử lý điều hướng, logic backend
+│ ├── 👤 AccountController.cs # Quản lý đăng nhập/đăng ký
+│ ├── 🛡️ AdminController.cs # Giao diện & quyền của Admin
+│ ├── 📦 DonHangController.cs # Quản lý đơn hàng
+│ ├── 🛒 GioHangController.cs # Xử lý giỏ hàng
+│ ├── 🏠 HomeController.cs # Trang chủ & trang tĩnh
+│ ├── 👨‍💼 NhanVienController.cs # Quản lý nhân viên
+│ └── 🧃 SanPhamController.cs # Quản lý sản phẩm
 │
-├── Views/ # Giao diện người dùng (Razor Views)
+├─── 📦 Models/                           # Các lớp dữ liệu (Models)
+│   ├── 🛒 CartItem.cs                  # Mục trong giỏ hàng
+│   ├── 🧾 ChiTietHoaDon.cs             # Chi tiết hóa đơn
+│   ├── 📂 DanhMucSp.cs                 # Danh mục sản phẩm
+│   ├── ⚠️ ErrorViewModel.cs            # Model lỗi (dùng cho trang lỗi)
+│   ├── 🧾 HoaDon.cs                    # Hóa đơn
+│   ├── 👥 KhachHang.cs                 # Khách hàng
+│   ├── 🏭 NhaCungCap.cs                # Nhà cung cấp
+│   ├── 👨‍💼 NhanVien.cs                  # Nhân viên
+│   ├── 👔 QuanLy.cs                    # Quản lý (admin hoặc user quản lý)
+│   ├── 🧃 SanPham.cs                   # Sản phẩm
+│   ├── 👤 TaiKhoan.cs                  # Tài khoản người dùng
+│   └── 🧠 ThanhMyMilkTeaContext.cs    # DbContext – quản lý database
 │
-├── appsettings.json # Cấu hình ứng dụng (chuỗi kết nối CSDL,...)
-├── Program.cs # Điểm khởi đầu của ứng dụng
-└── SQL.sql # Tập tin chứa câu lệnh SQL để tạo/tạo mẫu CSDL
-
-
+├── 🖼️ Views/                          # Giao diện Razor (.cshtml)
+│   ├── 👤 Account/                    # View đăng nhập, đăng ký
+│   ├── 🛡️ Admin/                      # View dành cho quản trị viên
+│   ├── 📦 DonHang/                    # View quản lý đơn hàng
+│   ├── 🛒 GioHang/                    # View giỏ hàng
+│   ├── 🏠 Home/                      # View trang chủ và trang tĩnh
+│   ├── 👨‍💼 NhanVien/                  # View quản lý nhân viên
+│   ├── 🧃 SanPham/                   # View quản lý sản phẩm
+│   ├── 📚 Shared/                    # Layouts và partial views dùng chung
+│   ├── 🔧 _ViewImports.cshtml        # File import chung các namespace
+│   └── 🔧 ViewStart.cshtml            # File cấu hình layout chung
+│
+├── 🛠️ appsettings.json # Cấu hình toàn cục (ConnectionString,...)
+├── 🚀 Program.cs # Entry point khởi chạy ứng dụng
+└── 🗂️ SQL.sql # Script tạo database và bảng mẫu
 ---
 
 ## 🚀 Hướng dẫn chạy dự án
